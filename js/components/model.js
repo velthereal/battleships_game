@@ -54,7 +54,11 @@ export class Model{
         for (let i = 0; i< current.length; i++) {
             if(current.direction){
                 pointer.push([current[i][0] - 1, current[i][1]]);
-                pointer.push([current[i][0] - 1, current[i][1]]);
+                pointer.push([current[i][0] + 1, current[i][1]]);
+            }
+            else {
+                pointer.push([current[i][0], current[i][1] - 1]);
+                pointer.push([current[i][0], current[i][1] + 1]);
             }
         }
     }
