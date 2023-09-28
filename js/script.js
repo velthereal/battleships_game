@@ -1,3 +1,5 @@
-import { Model } from "./components/model.js";
+import { Controller } from "./components/controller.js";
 
-let test = new Model();
+let game = new Controller('.board');
+
+game.startGame();

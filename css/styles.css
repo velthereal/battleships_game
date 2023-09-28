@@ -16,6 +16,7 @@
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    cursor: pointer;
 }
 .header-alpha {
     grid-column: 2/span 10;
@@ -37,4 +38,9 @@
 .board div {
     background-color: aqua;
     border: solid 1px rgb(147, 209, 209);
+}
+
+.ship{
+    background: url(../images/ship.png) no-repeat center center;
+    background-size: contain;
 }
