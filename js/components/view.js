@@ -20,4 +20,10 @@ export class View{
    getBoard(){
       return this.board;
    }
+	winGame(){
+		let win = document.createElement('div');
+		win.textContent = 'You win!!!';
+		win.classList.add('win');
+		document.body.insertAdjacentElement('afterbegin',win);
+	}
 }
